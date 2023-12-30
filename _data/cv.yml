@@ -1,0 +1,35 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Solihin
+    - name: Date of Birth
+      value: 10th January 2003
+    - name: Languages
+      value: Indonesia, English, Javanese
+
+- title: Education
+  type: time_table
+  contents:
+    - title: BSc
+      institution: Sepuluh Nopember Institute of Technology, Surabaya, Indonesia
+      year: 2024
+      description:
+        - Interested with Quantum Mechanics, Condensed Matter Theory, and Materials Science
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Assistant
+      institution: Research Centre for Quantum Physics, BRIN
+      year: 2023 - 2024
+      description:
+        - Tunable optical absorption in undoped graphene sandwiched inside multilayer dielectric stacks with mirror symmetry
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Theoretical Condensed Matter Physics
+    - title: Quantum Materials
+    - title: Quantum Mechanics
+    - title: Quantum Optomechanics
