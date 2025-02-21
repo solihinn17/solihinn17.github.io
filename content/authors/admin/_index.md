@@ -32,19 +32,18 @@ organizations:
 profiles:
   - icon: at-symbol
     url: 'mailto:solihin1717.wonomulyo@gmail.com'
-    label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+    url: https://twitter.com/solihinn17_
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/solihinn17
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/solihinn17
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/s-solihin-41a04a2b4/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=1PWIUmUAAAAJ&hl=en&oi=sra
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/0009-0005-0404-8751
 
 interests:
   - Quantum Magnonics
@@ -174,4 +173,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Solihin is a graduate student in Theoretical Condensed Matter Physics at Universitas Indonesia. His research interests include magnon-polaritons, light-matter interactions, and many-body physics. He is currently focusing on topological magnonics using both semiclassical and quantum approaches.
