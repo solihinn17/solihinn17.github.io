@@ -48,7 +48,7 @@ profiles:
 
 interests:
   - Quantum Magnonics
-  - Theoretical Condensed Matter Physics
+  - Condensed Matter Physics
   - Quantum Mechanics
 
 education:
