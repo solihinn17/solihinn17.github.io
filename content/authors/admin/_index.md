@@ -55,7 +55,7 @@ education:
   - area: MSc Physics
     institution: Universitas Indonesia
     date_start: 2024-08-28
-    date_end: ongoing
+    date_end: 
     summary: |
       GPA: 3.87/4.0
 
