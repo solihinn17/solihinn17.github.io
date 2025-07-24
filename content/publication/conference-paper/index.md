@@ -5,12 +5,20 @@ title: 'An example conference paper'
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+  - F Kengo
   - admin
-  - Robert Ford
+  - MS Ukhtary
+  - J Suwardy
+  - MA Majidi
+  - ART Nugraha
 
 # Author notes (optional)
 author_notes:
   - 'Equal contribution'
+  - 'Equal contribution'
+  -
+  -
+  -
   - 'Equal contribution'
 
 date: '2013-07-01T00:00:00Z'
@@ -34,7 +42,7 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere 
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-  - Large Language Models
+  - Light-Matter Interaction
 
 # Display this page in the Featured widget?
 featured: true

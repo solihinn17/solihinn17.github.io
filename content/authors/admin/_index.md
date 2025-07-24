@@ -74,11 +74,11 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Research Assistant
+    company_name: National Research and Innovation Agency
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2023-05-01
     date_end: ''
     summary: |2-
       Responsibilities include:
