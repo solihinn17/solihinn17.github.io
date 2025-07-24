@@ -22,7 +22,7 @@ doi: '10.1088/1402-4896/ad23b1'
 
 publishDate: '2024-02-08T00:00:00Z'
 
-publication_types: ['journal-article']  # journal-article
+publication_types: ['article-journal']  # journal-article
 
 publication: In *Physica Scripta*
 publication_short: *Phys. Scr.*
