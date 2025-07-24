@@ -1,95 +1,80 @@
 ---
-title: 'An example conference paper'
+title: 'Tunable optical absorption in undoped graphene sandwiched between multilayer dielectric stacks with mirror symmetry'
 
-# Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
-# and it will be replaced with their full name and linked to their profile.
 authors:
   - F Kengo
-  - admin
+  - S Solihin
   - MS Ukhtary
   - J Suwardy
   - MA Majidi
   - ART Nugraha
 
-# Author notes (optional)
 author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
-  -
-  -
-  -
-  - 'Equal contribution'
+  - Equal contribution
+  - Equal contribution
+  - ''
+  - ''
+  - ''
+  - Equal contribution
 
-date: '2013-07-01T00:00:00Z'
-doi: ''
+date: '2024-02-08T00:00:00Z'
+doi: '10.1088/1402-4896/ad23b1'
 
-# Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2024-02-08T00:00:00Z'
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+publication_types: ['2']  # journal-article
 
-# Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
+publication: In *Physica Scripta*
+publication_short: *Phys. Scr.*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: >
+  We theoretically investigate the optical absorption of an undoped graphene monolayer embedded in a one-dimensional multilayer dielectric stack with mirror symmetry. Using the transfer matrix method, we derive analytical and numerical solutions for the optical absorption as a function of the stack's structural parameters. We find that in an ABC structure with even repetition number, graphene absorbs 2.3% of light—identical to the value for free-standing graphene. However, in an ABC structure with odd repetition or an ABCD structure (regardless of repetition number), the optical absorption can reach up to 50%, which is the theoretical maximum for undoped monolayers in symmetric stacks. These results enable tunable light absorption between 0–50% and offer design flexibility for optoelectronic applications.
 
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: >
+  This work demonstrates tunable light absorption in undoped graphene using dielectric multilayers. Optical absorption can reach up to 50% depending on stack configuration and refractive indices.
 
 tags:
   - Light-Matter Interaction
+  - Graphene
+  - Optical Absorption
+  - Dielectric Multilayers
+  - Transfer Matrix Method
 
-# Display this page in the Featured widget?
 featured: true
 
-# Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+url_pdf: 'https://doi.org/10.1088/1402-4896/ad23b1'
+url_code: 'https://github.com/solihinn17/graphene-stack-absorption'
+url_dataset: 'https://github.com/solihinn17/graphene-stack-absorption'
+url_source: 'https://github.com/solihinn17/graphene-stack-absorption'
+url_video: ''
 
-url_pdf: ''
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_video: 'https://youtube.com'
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-  focal_point: ''
+  caption: 'Graphene optical absorption in ABC/ABCD dielectric stacks.'
+  focal_point: 'center'
   preview_only: false
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
 projects:
   - example
 
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
 slides: example
 ---
 
 {{% callout note %}}
-Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+Click the _Cite_ button above to enable visitors to import publication metadata into their reference management software.
 {{% /callout %}}
 
 {{% callout note %}}
 Create your slides in Markdown - click the _Slides_ button to check out the example.
 {{% /callout %}}
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+In this study, we developed an analytical model and conducted numerical simulations to evaluate the optical absorption in undoped monolayer graphene when placed inside multilayer dielectric stacks with mirror symmetry. The main findings include:
+
+- In ABC structures with even repetition number (r), absorption is fixed at 2.3%.
+- In ABC structures with odd r or ABCD structures (any r), absorption reaches up to 50%.
+- The absorption is tunable between 0–50% by varying the repetition number and refractive index ratio.
+- The peak absorption is strongly correlated with electric field enhancement at the center of the stack.
+- The work builds upon previous studies on AB structures and extends the tunability and efficiency of optical design.
+
+This paper introduces a robust approach to controlling light-matter interactions in atomically thin systems and opens new opportunities for designing photodetectors, photovoltaics, and optoelectronic devices using 2D materials.
+
+> **Data and Code**: The full dataset and code used in this work are available at [https://github.com/solihinn17/graphene-stack-absorption](https://github.com/solihinn17/graphene-stack-absorption).
