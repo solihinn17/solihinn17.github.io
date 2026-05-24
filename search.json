@@ -1,0 +1,22 @@
+[
+    {
+        "title": "About Solihin (Home)",
+        "url": "index.html",
+        "snippet": "Graduate student in Theoretical Condensed Matter Physics at Universitas Indonesia. Research interests include quantum magnonics."
+    },
+    {
+        "title": "Tunable Spin Response Properties in Electronically Robust Ferromagnetic $\\text{CrSiSe}_3$ Monolayer under External Electric Fields",
+        "url": "papers.html",
+        "snippet": "Preprint publication investigating the electronic, magnetic, and spin response properties of $\\text{CrSiSe}_3$ monolayer under external out-of-plane electric fields."
+    },
+    {
+        "title": "Geometry-controlled magnon-polariton excitations in a bilayer planar cavity",
+        "url": "papers.html",
+        "snippet": "Preprint publication exploring magnon-polariton coupling and coupling strength tuning of double magnetic films in planar cavities."
+    },
+    {
+        "title": "Tunable optical absorption in undoped graphene sandwiched between multilayer dielectric stacks with mirror symmetry",
+        "url": "papers.html",
+        "snippet": "Published in Phys. Scr. 99 (2024). This study explores optical absorption and fields enhancement in graphene-dielectric multilayer structures."
+    }
+]

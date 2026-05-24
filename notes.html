@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes | Solihin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            
+            <div class="nav-left">
+                <a href="index.html" class="nav-brand">Solihin</a>
+            </div>
+            
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="papers.html">Publications</a></li>
+                    <li><a href="notes.html" class="active">Notes</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <button id="search-btn" class="nav-icon-btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button id="theme-btn" class="nav-icon-btn" aria-label="Toggle Dark Mode">
+                    <i class="far fa-sun"></i>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container" style="padding-bottom: 5rem;">
+        
+        <header class="page-header-dark">
+            <h1>Notes</h1>
+            <p style="color: #9ca3af; font-size: 1.05rem; margin-top: 0.5rem;">Derivations, computation tricks, and thoughts on physics.</p>
+        </header>
+
+        <div>
+            
+            <article class="note-card-preview">
+                <p style="font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.3rem;">On Progress • Category: Condensed Matter Theory</p>
+                <h3><a href="#">Coexistence between Superconductivity and Magnetic Phase</a></h3>
+                <p style="color: #cbd5e1; font-size: 0.95rem; margin-top: 0.5rem;">
+                    Insights and derivations adapted from distinguished paper "Anomaly of longitudinal spin susceptibility at a superconducting instability inside a magnetic phase" 
+                    <a href="https://doi.org/10.1103/PhysRevB.103.224527" target="_blank" style="color: inherit; text-decoration: underline;">Phys. Rev. B <strong>103</strong>, 224527 (2021)</a>.
+                </p>
+            </article>
+            
+            <article class="note-card-preview">
+                <p style="font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.3rem;">On Progress • Category: Condensed Matter Theory</p>
+                <h3><a href="#">Introduction to Quantum Magnonics</a></h3>
+                <p style="color: #cbd5e1; font-size: 0.95rem; margin-top: 0.5rem;">
+                    A foundational overview of spin-wave excitations and quantum magnonics, tailored for beginners.
+                </p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p style="text-align: center;">&copy; 2026 Solihin. Powered by clean HTML & CSS.</p>
+        </div>
+    </footer>
+
+    <div id="search-modal" class="search-modal">
+        <div class="search-content">
+            <span id="close-search" class="close-search">&times;</span>
+            <h2>Search</h2>
+            <input type="text" id="search-input" placeholder="Type to search papers, notes, or updates...">
+            <p style="color: #9ca3af; font-size: 0.9rem; margin-top: 1rem;">Press enter to search.</p>
+            <div id="search-results" class="search-results-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

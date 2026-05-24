@@ -1,0 +1,735 @@
+/* ==========================================================================
+   1. GLOBAL RESET & THEME
+   ========================================================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #161616;
+    color: #e5e7eb;
+    line-height: 1.6;
+    padding-top: 60px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* ==========================================================================
+   2. FIXED DARK NAVBAR (3-COLUMN LAYOUT)
+   ========================================================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #2a2a2a;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Pembagian 3 Kolom Navbar */
+.nav-left, .nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    justify-content: flex-start;
+}
+
+.nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-right {
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+/* --- BRAND / NAMA (BERSIH TOTAL TANPA BLOK) --- */
+.nav-brand {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    text-decoration: none;
+    background: transparent !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    display: inline-block !important;
+}
+
+.nav-brand:hover, .nav-brand:focus, .nav-brand:active {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+/* --- TAB NAV LINKS --- */
+.nav-links {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.nav-links li {
+    height: 100%;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    padding: 0 1.2rem;
+    text-decoration: none;
+    color: #9ca3af;
+    font-size: 0.95rem;
+    font-weight: 500;
+    height: 100%;
+    transition: all 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ffffff;
+    background-color: #262626; 
+}
+
+/* --- BUTTON IKON KANAN --- */
+.nav-icon-btn {
+    background: transparent;
+    border: none;
+    color: #9ca3af;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.nav-icon-btn:hover {
+    color: #ffffff;
+    background-color: #262626;
+}
+
+/* ==========================================================================
+   3. HERO SECTION (QUANTUM EMERALD ASYMMETRIC CORNER GLOW)
+   ========================================================================== */
+.hero-section {
+    background-color: #04392b; /* Diturunkan sedikit ke deep emerald agar pendaran pojok terlihat kontras */
+    background-image: 
+        radial-gradient(circle at 90% 15%, rgba(16, 185, 129, 0.45) 0%, transparent 65%), /* KUNCI: Pendaran Kuantum Cerah di Pojok Kanan Atas */
+        radial-gradient(circle at 10% 85%, rgba(5, 150, 105, 0.2) 0%, transparent 45%),   /* Pendaran sekunder di Pojok Kiri Bawah */
+        linear-gradient(180deg, rgba(4, 57, 43, 0.9), rgba(2, 28, 22, 1)); /* Gradasi dasar linear untuk kedalaman dimensi gelap */
+    min-height: calc(100vh - 60px); 
+    display: flex;
+    align-items: center; 
+    
+    /* Efek Batas Bawah Menyala Lembut */
+    border-bottom: 2px solid rgba(16, 185, 129, 0.3);
+    box-shadow: 0 4px 30px rgba(16, 185, 129, 0.15);
+    
+    padding: 3rem 0; 
+    transition: all 0.3s ease;
+}
+
+.hero-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .hero-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+/* SIDEBAR PROFILE */
+.sidebar-profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 280px;
+}
+
+.avatar-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.1); 
+    object-fit: cover;
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.25), 
+        0 0 40px rgba(16, 185, 129, 0.2); 
+    transition: all 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.02); 
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.35), 
+        0 0 60px rgba(16, 185, 129, 0.35);
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.02em;
+}
+
+.profile-role {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.profile-inst {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* MAIN BIO AREA */
+.main-bio {
+    flex: 2;
+}
+
+.main-bio h2 {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.bio-paragraph {
+    font-size: 1.05rem;
+    color: #e2e8f0;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.btn-download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.15); 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin-bottom: 2.5rem;
+    backdrop-filter: blur(2px); 
+}
+
+.btn-download-cv:hover {
+    background-color: rgba(16, 185, 129, 0.25); 
+    border-color: #10b981;
+    transform: translateY(-2px); 
+    color: #ffffff !important;
+}
+
+.info-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+@media (min-width: 640px) {
+    .info-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.info-block h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.interests-ul {
+    list-style: none;
+}
+
+.interests-ul li {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.interests-ul li::before {
+    content: "•";
+    color: #94a3b8;
+    font-size: 1.2rem;
+}
+
+.edu-ul {
+    list-style: none;
+}
+
+.edu-li {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.edu-li i {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+}
+
+.edu-title {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.edu-inst {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+/* ==========================================================================
+   4. RECENT NEWS / UPDATES SECTION
+   ========================================================================== */
+.updates-row {
+    padding: 6rem 0;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+}
+
+.updates-container {
+    width: 100%;
+    max-width: 850px;
+    border: 1px solid #2e2e2e;
+    border-radius: 10px;
+    padding: 3rem;
+    background-color: #1a1a1a;
+    margin: 0 auto;
+}
+
+.updates-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 3.5rem;
+    font-weight: 700;
+}
+
+.update-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.update-item:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 640px) {
+    .update-item {
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+.update-date {
+    width: 120px;
+    color: #6b7280;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+    padding-top: 0.2rem;
+}
+
+.update-content {
+    flex: 1;
+}
+
+.update-content h4 {
+    color: #ffffff;
+    font-size: 1.15rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.update-content p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.update-readmore {
+    color: #10b981; 
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.update-readmore:hover {
+    color: #34d399;
+}
+
+/* ==========================================================================
+   5. PAPERS & NOTES INTERIOR GENERAL
+   ========================================================================== */
+.page-header-dark {
+    padding: 3rem 0 1.5rem 0;
+    border-bottom: 1px solid #2e2e2e;
+    margin-bottom: 2.5rem;
+}
+
+.page-header-dark h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.paper-card {
+    background-color: #1f1f1f;
+    border: 1px solid #2e2e2e;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.paper-card h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* MENYEJAJARKAN DETAIL TOMBOL SERTA ATURAN WARNA DIAM & HOVER (Mode Gelap) */
+.paper-links {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.paper-links a, .paper-links button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.4rem 0.8rem;
+    background-color: transparent !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    /* Paksa Ketebalan Setara */
+    font-family: inherit !important;
+    font-weight: 500 !important;
+    -webkit-font-smoothing: antialiased;
+    
+    /* Tampilan Normal Sebelum Disentuh (Mode Gelap) */
+    color: #9ca3af !important;
+    border: 1px solid #4b5563 !important;
+}
+
+/* Efek Menyala Hijau Saat Disentuh (Mode Gelap) */
+.paper-links a:hover, .paper-links button:hover {
+    color: #10b981 !important;
+    border-color: #10b981 !important;
+    background-color: rgba(16, 185, 129, 0.05) !important;
+}
+
+.note-card-preview {
+    border-bottom: 1px solid #2e2e2e;
+    padding: 1.5rem 0;
+}
+
+.note-card-preview h3 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.note-card-preview h3 a:hover {
+    color: #059669;
+}
+
+/* ==========================================================================
+   6. SEARCH MODAL STYLES
+   ========================================================================== */
+.search-modal {
+    display: none; 
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-modal.show {
+    display: flex;
+}
+
+.search-content {
+    background-color: #1f1f1f;
+    padding: 3rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    border: 1px solid #2e2e2e;
+}
+
+.search-content h2 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+#search-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #161616;
+    color: #fff;
+    outline: none;
+}
+
+#search-input:focus { border-color: #10b981; }
+
+.close-search {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-search:hover { color: #10b981; }
+
+.search-results-container {
+    margin-top: 1.5rem;
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.search-result-item {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+}
+
+.search-result-item:last-child { border-bottom: none; }
+
+.search-result-item:hover {
+    background-color: #262626;
+    border-radius: 6px;
+}
+
+.search-result-title {
+    color: #10b981;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.search-result-snippet {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   7. LIGHT MODE OVERRIDES
+   ========================================================================== */
+body.light-mode {
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+body.light-mode .navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+body.light-mode .nav-brand {
+    color: #111827 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+body.light-mode .nav-links a:hover,
+body.light-mode .nav-links a.active {
+    color: #111827;
+    background-color: #f3f4f6;
+}
+
+body.light-mode .nav-links a { color: #6b7280; }
+body.light-mode .nav-icon-btn { color: #6b7280; }
+body.light-mode .nav-icon-btn:hover { color: #111827; background-color: #f3f4f6; }
+
+body.light-mode .updates-row { background-color: #ffffff; }
+body.light-mode .updates-container {
+    background-color: #f9fafb;
+    border-color: #e5e7eb;
+}
+body.light-mode .updates-title,
+body.light-mode .update-content h4 { color: #111827; }
+
+body.light-mode .update-content p { color: #4b5563 !important; }
+body.light-mode .update-date { color: #6b7280 !important; }
+
+body.light-mode .page-header-dark { border-bottom-color: #e5e7eb; }
+body.light-mode .page-header-dark h1 { color: #111827 !important; }
+body.light-mode .page-header-dark p { color: #6b7280 !important; }
+
+body.light-mode .paper-card {
+    background-color: #ffffff;
+    border-color: #e5e7eb;
+}
+body.light-mode .paper-card h3 { color: #111827 !important; }
+
+body.light-mode .paper-card p,
+body.light-mode .note-card-preview p {
+    color: #4b5563 !important;
+}
+
+body.light-mode .note-card-preview { border-bottom-color: #e5e7eb; }
+body.light-mode .note-card-preview h3 a { color: #111827 !important; }
+body.light-mode .note-card-preview h3 a:hover { color: #10b981 !important; }
+
+body.light-mode .paper-links a, 
+body.light-mode .paper-links button {
+    color: #4b5563 !important;
+    border-color: #d1d5db !important;
+    background-color: #ffffff !important;
+    font-weight: 500 !important; 
+}
+
+body.light-mode .paper-links a:hover, 
+body.light-mode .paper-links button:hover {
+    color: #059669 !important;
+    border-color: #059669 !important;
+    background-color: #f0fdf4 !important;
+}
+
+body.light-mode .paper-card div[id^="abs-"] {
+    background-color: #e5e7eb !important; 
+}
+
+body.light-mode .paper-card div[id^="abs-"] p {
+    color: #111827 !important; 
+    font-weight: 450 !important;
+}
+
+body.light-mode .search-content {
+    background-color: #ffffff;
+    border-color: #e5e7eb;
+}
+body.light-mode .search-content h2 { color: #111827; }
+body.light-mode #search-input {
+    background-color: #f9fafb;
+    border-color: #d1d5db;
+    color: #111827;
+}
+body.light-mode .search-result-item { border-bottom-color: #e5e7eb; }
+body.light-mode .search-result-item:hover { background-color: #f3f4f6; }
+body.light-mode .search-result-snippet { color: #6b7280; }
+
+/* ==========================================================================
+   8. FOOTER
+   ========================================================================== */
+footer {
+    background-color: #1a1a1a;
+    border-top: 1px solid #2a2a2a;
+    padding: 2rem 0;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    text-align: center;
+}
+
+body.light-mode footer {
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    color: #6b7280;
+}
