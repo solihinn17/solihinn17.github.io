@@ -716,6 +716,68 @@ body.light-mode .search-result-item { border-bottom-color: #e5e7eb; }
 body.light-mode .search-result-item:hover { background-color: #f3f4f6; }
 body.light-mode .search-result-snippet { color: #6b7280; }
 
+/* --- HERO SECTION LIGHT MODE OVERRIDE --- */
+body.light-mode .hero-section {
+    background-color: #ffffff; 
+    /* Pendaran kuantum versi terang: jauh lebih lembut dan elegan */
+    background-image: 
+        radial-gradient(circle at 90% 15%, rgba(16, 185, 129, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 10% 85%, rgba(5, 150, 105, 0.06) 0%, transparent 40%),
+        linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+    border-bottom: 2px solid rgba(16, 185, 129, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03); /* Bayangan dibuat sangat tipis */
+}
+
+/* Memastikan teks profil berubah menjadi gelap pekat */
+body.light-mode .profile-name,
+body.light-mode .main-bio h2,
+body.light-mode .info-block h3,
+body.light-mode .edu-title {
+    color: #111827;
+}
+
+/* Teks peran dan bio menjadi abu-abu gelap agar nyaman dibaca */
+body.light-mode .profile-role,
+body.light-mode .btn-download-cv {
+    color: #059669; /* Menggunakan hijau yang sedikit lebih gelap untuk teks */
+}
+
+body.light-mode .profile-inst,
+body.light-mode .edu-inst {
+    color: #6b7280;
+}
+
+body.light-mode .bio-paragraph,
+body.light-mode .interests-ul li {
+    color: #4b5563;
+}
+
+/* Menyesuaikan bingkai foto profil di mode terang */
+body.light-mode .avatar {
+    border-color: #10b981; /* Bingkai menjadi hijau tegas, bukan putih transparan */
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.08), 
+        0 0 30px rgba(16, 185, 129, 0.15);
+}
+
+body.light-mode .avatar:hover {
+    border-color: #059669;
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.12), 
+        0 0 50px rgba(16, 185, 129, 0.25);
+}
+
+/* Menyesuaikan tombol CV agar menyala dengan pas */
+body.light-mode .btn-download-cv {
+    background-color: rgba(16, 185, 129, 0.1);
+    border-color: #10b981;
+}
+
+body.light-mode .btn-download-cv:hover {
+    background-color: #10b981;
+    color: #ffffff !important;
+}
+
 /* ==========================================================================
    8. FOOTER
    ========================================================================== */
